@@ -1,0 +1,10 @@
+These slash commands use the X-colors API, and the functions are random colour ( no arguments) , random color via range (1  argument) , random colour via hue ( 1 argument),  random colour via hue and type (1 argument) , rgb to hex ( 3 arguments ) , and rgb to hsl ( 3 arguments). 
+
+Also here are the commands i used to carry out these functions 
+
+none - randomcolour
+100 - randomcolourviarange
+aqua - randomcolourviahue
+pink , dark - randomcolourviahueandtype
+100-100-100 - rgb to hex
+100-100-100 - rgb to hsl 

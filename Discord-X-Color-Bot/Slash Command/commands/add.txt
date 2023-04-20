@@ -1,0 +1,19 @@
+const { SlashCommandBuilder } = require('discord.js');
+///StAuth10222: I ALexei Ougriniouk, 000776331 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('add')
+		.setDescription('Adds two numbers together.')
+		.addNumberOption(option => option.setName('number1')
+                                         .setRequired(true)
+                                         .setDescription('The first number'))
+		.addNumberOption(option => option.setName('number2')
+                                         .setRequired(true)
+                                         .setDescription('The second number')),
+	async execute(interaction) {
+		const num1 = interaction.options.getNumber("number1");
+		const num2 = interaction.options.getNumber("number2");
+        const result = num1 + num2;
+		return interaction.reply("result: " + result);
+	},
+};
